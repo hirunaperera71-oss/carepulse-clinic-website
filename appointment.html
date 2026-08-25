@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePulse | Channeling & Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <span>📍 124 Medical Center Road, Colombo</span>
+        <span>📞 Emergency 24/7 Helpline: <strong>1990</strong></span>
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <div class="brand-icon">+</div> CarePulse Clinic
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="appointment.html" class="btn-app active">Book Channel</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-container" style="max-width:600px;">
+        <h2>Book a Doctor Channeling</h2>
+        <p class="subtitle">Fill in your information to reserve an appointment slot.</p>
+
+        <form class="hero-card" style="box-shadow:none;" onsubmit="alert('Appointment Confirmed! Confirmation SMS Sent.'); return false;">
+            <div class="form-group">
+                <label>Patient Full Name</label>
+                <input type="text" class="form-control" placeholder="e.g. Kasun Perera" required>
+            </div>
+            <div class="form-group">
+                <label>Contact Number</label>
+                <input type="tel" class="form-control" placeholder="07X XXXXXXX" required>
+            </div>
+            <div class="form-group">
+                <label>Select Doctor</label>
+                <select class="form-control" required>
+                    <option>Dr. Nalin Perera (Cardiology)</option>
+                    <option>Dr. Anusha Silva (Pediatrics)</option>
+                    <option>Dr. K. Gunawardena (Dermatology)</option>
+                    <option>Dr. Dilhani Fernando (Neurology)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Preferred Date & Time</label>
+                <input type="datetime-local" class="form-control" required>
+            </div>
+            <button type="submit" class="btn" style="width:100%; border:none; cursor:pointer;">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 CarePulse Health Clinic. All rights reserved.</p>
+    </footer>
+</body>
+</html>
